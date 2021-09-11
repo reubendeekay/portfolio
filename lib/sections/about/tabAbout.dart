@@ -26,7 +26,7 @@ class AboutTab extends StatelessWidget {
             "\nAbout Me",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
+              fontWeight: FontWeight.w500,
               letterSpacing: 1.0,
             ),
           ),

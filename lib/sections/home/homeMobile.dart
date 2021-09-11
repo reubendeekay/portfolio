@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:lottie/lottie.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/widget/socialMediaIcon.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,14 +39,14 @@ class _HomeMobileState extends State<HomeMobile> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "HEY THERE! ",
+                      "ZERO TO APP IN NO TIME ! ",
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.025,
                           fontWeight: FontWeight.w200),
                     ),
-                    Image.asset(
-                      "assets/hi.gif",
-                      height: height * 0.03,
+                    Lottie.asset(
+                      "assets/rocket.json",
+                      height: height * 0.1,
                     ),
                   ],
                 ),
@@ -53,15 +54,15 @@ class _HomeMobileState extends State<HomeMobile> {
                   height: height * 0.01,
                 ),
                 Text(
-                  "Muhammad",
-                  style: GoogleFonts.montserrat(
-                      fontSize: height * 0.055,
-                      fontWeight: FontWeight.w100,
+                  "Reuben",
+                  style: GoogleFonts.poppins(
+                      fontSize: height * 0.04,
+                      fontWeight: FontWeight.w600,
                       letterSpacing: 1.1),
                 ),
                 Text(
-                  "Hamza",
-                  style: GoogleFonts.montserrat(
+                  "   Jefwa",
+                  style: GoogleFonts.srisakdi(
                       fontSize: height * 0.055, fontWeight: FontWeight.w500),
                 ),
                 Row(
@@ -78,8 +79,9 @@ class _HomeMobileState extends State<HomeMobile> {
                             fontWeight: FontWeight.w200),
                         text: [
                           " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                          " Web Developer",
+                          " UI/UX Enthusiast",
+                          "Graphics Designer"
                         ]),
                   ],
                 ),

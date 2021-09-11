@@ -4,7 +4,7 @@ import 'package:portfolio/widget/projectCard.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants.dart';
 
-class PortfolioDesktop extends StatelessWidget {
+class ProjectsDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -15,11 +15,14 @@ class PortfolioDesktop extends StatelessWidget {
           horizontal: width * 0.02, vertical: height * 0.02),
       child: Column(
         children: [
+          SizedBox(
+            height: height * 0.1,
+          ),
           Text(
-            "\nPortfolio",
+            "\Projects",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
+              fontWeight: FontWeight.w500,
               letterSpacing: 1.0,
             ),
           ),

@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/widget/socialMediaIcon.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -33,13 +34,13 @@ class HomeTab extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "WELCOME TO MY PORTportfolio! ",
+                      "ZERO TO APP IN NO TIME ! ",
                       style: GoogleFonts.montserrat(
-                          fontSize: height * 0.03, fontWeight: FontWeight.w300),
+                          fontSize: height * 0.03, fontWeight: FontWeight.w400),
                     ),
-                    Image.asset(
-                      "assets/hi.gif",
-                      height: height * 0.05,
+                    Lottie.asset(
+                      "assets/rocket.json",
+                      height: height * 0.1,
                     ),
                   ],
                 ),
@@ -47,16 +48,16 @@ class HomeTab extends StatelessWidget {
                   height: height * 0.04,
                 ),
                 Text(
-                  "Muhammad",
-                  style: GoogleFonts.montserrat(
-                      fontSize: height * 0.07,
-                      fontWeight: FontWeight.w100,
+                  "Reuben",
+                  style: GoogleFonts.poppins(
+                      fontSize: height * 0.05,
+                      fontWeight: FontWeight.w600,
                       letterSpacing: 1.5),
                 ),
                 Text(
-                  "Hamza",
-                  style: GoogleFonts.montserrat(
-                      fontSize: height * 0.07, fontWeight: FontWeight.w500),
+                  "Jefwa",
+                  style: GoogleFonts.srisakdi(
+                      fontSize: height * 0.06, fontWeight: FontWeight.w500),
                 ),
                 Row(
                   children: [
@@ -72,8 +73,9 @@ class HomeTab extends StatelessWidget {
                             fontWeight: FontWeight.w200),
                         text: [
                           " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                          " Web Developer",
+                          " UI/UX Enthusiast",
+                          "Graphics Designer"
                         ]),
                   ],
                 ),

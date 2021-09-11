@@ -4,7 +4,7 @@ import 'package:portfolio/constants.dart';
 import 'package:portfolio/widget/projectCard.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class PortfolioMobileTab extends StatelessWidget {
+class ProjectsMobileTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -13,10 +13,10 @@ class PortfolioMobileTab extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "\nPortfolio",
+            "\Projects",
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
-              fontWeight: FontWeight.w100,
+              fontWeight: FontWeight.w500,
               letterSpacing: 1.0,
             ),
           ),
@@ -36,6 +36,7 @@ class PortfolioMobileTab extends StatelessWidget {
                 projectTitle: kProjectsTitles[i],
                 projectDescription: kProjectsDescriptions[i],
                 projectLink: kProjectsLinks[i],
+                // backImage: kProjectsBanner[i],
               ),
             ),
             options: CarouselOptions(

@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:portfolio/animations/bottomAnimation.dart';
 import 'package:portfolio/animations/entranceFader.dart';
 import 'package:portfolio/constants.dart';
@@ -42,17 +43,17 @@ class HomeDesktop extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      "WELCOME TO MY PORTFOLIO! ",
+                      "ZERO TO APP IN NO TIME ! ",
                       style: GoogleFonts.montserrat(
-                          fontSize: height * 0.03, fontWeight: FontWeight.w300),
+                          fontSize: height * 0.03, fontWeight: FontWeight.w400),
                     ),
                     EntranceFader(
                       offset: Offset(0, 0),
                       delay: Duration(seconds: 2),
                       duration: Duration(milliseconds: 800),
-                      child: Image.asset(
-                        "assets/hi.gif",
-                        height: height * 0.05,
+                      child: Lottie.asset(
+                        "assets/rocket.json",
+                        height: height * 0.1,
                       ),
                     ),
                   ],
@@ -62,14 +63,14 @@ class HomeDesktop extends StatelessWidget {
                 ),
                 Text(
                   "Reuben",
-                  style: GoogleFonts.montserrat(
-                      fontSize: width < 1200 ? height * 0.085 : height * 0.095,
-                      fontWeight: FontWeight.w100,
+                  style: GoogleFonts.poppins(
+                      fontSize: width < 1200 ? height * 0.05 : height * 0.06,
+                      fontWeight: FontWeight.w600,
                       letterSpacing: 4.0),
                 ),
                 Text(
-                  "Jefwa",
-                  style: GoogleFonts.montserrat(
+                  "   Jefwa",
+                  style: GoogleFonts.srisakdi(
                       fontSize: width < 1200 ? height * 0.085 : height * 0.095,
                       fontWeight: FontWeight.w500,
                       letterSpacing: 5.0),
@@ -86,11 +87,13 @@ class HomeDesktop extends StatelessWidget {
                       ),
                       TyperAnimatedTextKit(
                           isRepeatingAnimation: true,
-                          speed: Duration(milliseconds: 50),
+                          pause: Duration(seconds: 5),
+                          speed: Duration(milliseconds: 100),
                           textStyle: GoogleFonts.montserrat(
                               fontSize: height * 0.03,
-                              fontWeight: FontWeight.w200),
+                              fontWeight: FontWeight.w100),
                           text: [
+                            "Dream big! I will build it for you. ",
                             " Flutter Developer",
                             " Web Developer",
                             " UI/UX Enthusiast",

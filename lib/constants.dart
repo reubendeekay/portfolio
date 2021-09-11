@@ -28,16 +28,11 @@ void launchURL(String _url) async =>
     await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
 
 // Community
-final kCommunityLogo = [
-  'assets/cui.png',
-  'assets/flutterIsl.png',
-  'assets/dsc.png'
-];
+final kCommunityLogo = ['assets/dsc.png', 'assets/git.png'];
 
 final kCommunityLinks = [
-  "https://www.comsats.edu.pk/",
-  "https://web.facebook.com/FlutterIslamabadPakistan/",
-  "https://gdsc.community.dev/university-of-nairobi/"
+  "https://gdsc.community.dev/university-of-nairobi/",
+  "https://github.com/reubendeekay"
 ];
 
 // Tools & Tech

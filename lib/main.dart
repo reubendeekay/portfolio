@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/sections/mainSection.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primaryColor: kPrimaryColor,
         accentColor: kPrimaryColor,
-        fontFamily: "Montserrat",
+        fontFamily: GoogleFonts.spartan().fontFamily,
         highlightColor: kPrimaryColor,
       ),
       home: MainPage(),

@@ -15,8 +15,8 @@ class NavBarLogo extends StatelessWidget {
         children: [
           Text(
             "R",
-            style: GoogleFonts.poppins(
-                fontSize: 60,
+            style: GoogleFonts.spartan(
+                fontSize: 40,
                 color: kPrimaryColor,
                 fontWeight: FontWeight.w900),
           ),

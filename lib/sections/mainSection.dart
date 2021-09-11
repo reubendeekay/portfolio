@@ -9,7 +9,7 @@ import 'package:portfolio/sections/about/about.dart';
 import 'package:portfolio/sections/contact/contact.dart';
 import 'package:portfolio/sections/home/home.dart';
 import 'package:portfolio/sections/navBar/navBarLogo.dart';
-import 'package:portfolio/sections/portfolio/portfolio.dart';
+import 'package:portfolio/sections/projects/projects.dart';
 import 'package:portfolio/sections/services/services.dart';
 import 'package:portfolio/widget/arrowOnTop.dart';
 import 'package:portfolio/widget/footer.dart';
@@ -55,7 +55,7 @@ class _MainPageState extends State<MainPage> {
     } else if (i == 2) {
       return Services();
     } else if (i == 3) {
-      return Portfolio();
+      return Projects();
     } else if (i == 4) {
       return Contact();
     } else if (i == 5) {
@@ -172,7 +172,7 @@ class _MainPageState extends State<MainPage> {
                   side: BorderSide(color: kPrimaryColor)),
               onPressed: () {
                 html.window.open(
-                    'https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE',
+                    'https://drive.google.com/uc?export=view&id=1yItOQ9twBqVGryjyU-VJt97UYYuC3B6o',
                     "pdf");
               },
               child: Text(
@@ -211,7 +211,7 @@ class _MainPageState extends State<MainPage> {
                     side: BorderSide(color: kPrimaryColor)),
                 onPressed: () {
                   launchURL(
-                      "https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE");
+                      "https://drive.google.com/uc?export=view&id=1yItOQ9twBqVGryjyU-VJt97UYYuC3B6o");
                 },
                 child: ListTile(
                   leading: Icon(

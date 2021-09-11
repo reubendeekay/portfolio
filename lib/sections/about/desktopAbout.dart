@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/sections/navBar/navBarLogo.dart';
 import 'package:portfolio/widget/aboutMeText.dart';
@@ -16,36 +17,47 @@ class AboutDesktop extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.symmetric(
-          horizontal: width * 0.02, vertical: height * 0.02),
+          horizontal: width * 0.1, vertical: height * 0.02),
       height: height,
-      color: Colors.grey[900],
+      // color: Colors.grey[900],
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            "\nAbout Me",
-            style: GoogleFonts.montserrat(
-              fontSize: height * 0.075,
-              fontWeight: FontWeight.w500,
-              letterSpacing: 1.0,
-            ),
-          ),
-          SizedBox(
-            height: height * 0.05,
-          ),
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                flex: 3,
-                child: AboutMeText(
-                  fontSize: width <= 1100 ? 14 : 16,
+              Container(
+                height: height * 0.5,
+                width: height * 0.6,
+                child: Lottie.asset(
+                  'assets/about.json',
+                  animate: true,
                 ),
               ),
-              (width <= 950 && width >= 1185)
-                  ? Container()
-                  : Expanded(child: Container()),
-              width >= 1185 ? Expanded(child: ToolsTech()) : ToolsTech()
+              SizedBox(
+                width: width * 0.1,
+              ),
+              Expanded(
+                flex: 3,
+                child: Column(
+                  children: [
+                    Text(
+                      "\nAbout Me",
+                      style: GoogleFonts.montserrat(
+                        fontSize: height * 0.075,
+                        fontWeight: FontWeight.w500,
+                        letterSpacing: 1.0,
+                      ),
+                    ),
+                    SizedBox(
+                      height: height * 0.05,
+                    ),
+                    AboutMeText(
+                      fontSize: width <= 1100 ? 14 : 16,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
           SizedBox(
