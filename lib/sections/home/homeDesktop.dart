@@ -1,3 +1,4 @@
+import 'package:universal_html/html.dart' as html;
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -118,7 +119,40 @@ class HomeDesktop extends StatelessWidget {
                         ),
                       )
                   ],
-                )
+                ),
+                SizedBox(
+                  height: height * 0.05,
+                ),
+                EntranceFader(
+                  offset: Offset(0, -20),
+                  delay: Duration(seconds: 3),
+                  duration: Duration(seconds: 1),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 10),
+                    child: MaterialButton(
+                      hoverColor: kPrimaryColor.withAlpha(150),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.0),
+                      ),
+                      onPressed: () {
+                        html.window.open(
+                            'https://drive.google.com/uc?export=view&id=1yItOQ9twBqVGryjyU-VJt97UYYuC3B6o',
+                            "pdf");
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 10, horizontal: 50),
+                        child: Text(
+                          "View Resume",
+                          style: GoogleFonts.montserrat(
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

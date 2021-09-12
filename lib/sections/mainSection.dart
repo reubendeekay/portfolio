@@ -168,8 +168,8 @@ class _MainPageState extends State<MainPage> {
             child: MaterialButton(
               hoverColor: kPrimaryColor.withAlpha(150),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: kPrimaryColor)),
+                borderRadius: BorderRadius.circular(5.0),
+              ),
               onPressed: () {
                 html.window.open(
                     'https://drive.google.com/uc?export=view&id=1yItOQ9twBqVGryjyU-VJt97UYYuC3B6o',
@@ -177,12 +177,15 @@ class _MainPageState extends State<MainPage> {
               },
               child: Text(
                 "Resume",
-                style: GoogleFonts.montserrat(
+                style: TextStyle(
                   fontWeight: FontWeight.w200,
                 ),
               ),
             ),
           ),
+        ),
+        SizedBox(
+          width: 20,
         ),
       ],
     );

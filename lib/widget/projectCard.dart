@@ -38,7 +38,11 @@ class _ProjectCardState extends State<ProjectCard> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () => launch(widget.projectLink),
+      onTap: () => width > 760
+          ? launch(widget.projectLink)
+          : setState(() {
+              isHover = !isHover;
+            }),
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {
@@ -100,14 +104,16 @@ class _ProjectCardState extends State<ProjectCard> {
                 SizedBox(
                   height: height * 0.01,
                 ),
-                Text(
-                  widget.projectDescription,
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.montserrat(
-                      fontSize: height * 0.015,
-                      letterSpacing: 2.0,
-                      fontWeight: FontWeight.w100,
-                      height: width >= 600 ? 2.0 : 1.5),
+                Flexible(
+                  child: Text(
+                    widget.projectDescription,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.montserrat(
+                        fontSize: height * 0.015,
+                        letterSpacing: 2.0,
+                        fontWeight: FontWeight.w100,
+                        height: width >= 600 ? 2.0 : 1.5),
+                  ),
                 ),
                 SizedBox(
                   height: height * 0.01,

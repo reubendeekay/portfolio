@@ -27,8 +27,10 @@ class ProjectsDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "Here are few samples of my previous work :)\n\n",
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            "These are a few examples of my previous work\n\n",
+            style: GoogleFonts.montserrat(
+                fontWeight: FontWeight.w300, fontSize: height * 0.025),
+            textAlign: TextAlign.center,
           ),
           SizedBox(
             height: width > 1200 ? height * 0.45 : width * 0.2,
@@ -51,16 +53,10 @@ class ProjectsDesktop extends StatelessWidget {
                     projectTitle: kProjectsTitles[index],
                     projectDescription: kProjectsDescriptions[index],
                     projectLink: kProjectsLinks[index],
-                    bottomWidget: index == 1
-                        ? Image.network(
-                            "https://img.icons8.com/material-sharp/384/ffffff/google-play.png",
-                            height: height * 0.04,
-                          )
-                        : Container(),
                   ),
                 );
               },
-              itemCount: 4,
+              itemCount: kProjectsTitles.length,
             ),
           ),
           SizedBox(
@@ -72,7 +68,7 @@ class ProjectsDesktop extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5.0),
                 side: BorderSide(color: kPrimaryColor)),
             onPressed: () {
-              launchURL("https://github.com/m-hamzashakeel");
+              launchURL("https://github.com/reubendeekay");
             },
             child: Text(
               "See More",

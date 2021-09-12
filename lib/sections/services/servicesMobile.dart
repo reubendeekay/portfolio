@@ -20,11 +20,12 @@ class ServiceMobile extends StatelessWidget {
               letterSpacing: 1.0,
             ),
           ),
-          Text(
-            "I may not be perfect, but I'm surely of some help :)\n\n",
-            textAlign: TextAlign.center,
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
-          ),
+          Text("These are the services I offer: \n\n",
+              textAlign: TextAlign.center,
+              style: GoogleFonts.montserrat(
+                fontWeight: FontWeight.w300,
+                fontSize: height * 0.025,
+              )),
           CarouselSlider.builder(
             itemCount: 5,
             itemBuilder: (BuildContext context, int itemIndex, int i) =>

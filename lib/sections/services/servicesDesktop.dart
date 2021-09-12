@@ -24,8 +24,11 @@ class ServiceDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "I may not be perfect, but I'm surely of some help :)\n\n",
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            "These are the services I offer:\n\n",
+            style: GoogleFonts.montserrat(
+              fontWeight: FontWeight.w300,
+              fontSize: height * 0.025,
+            ),
           ),
           Column(
             children: [

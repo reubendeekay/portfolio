@@ -21,12 +21,13 @@ class ProjectsMobileTab extends StatelessWidget {
             ),
           ),
           Text(
-            "Here are few samples of my previous work :)\n\n",
-            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            "These are a few examples of my previous work\n\n",
+            style: GoogleFonts.montserrat(
+                fontWeight: FontWeight.w300, fontSize: height * 0.025),
             textAlign: TextAlign.center,
           ),
           CarouselSlider.builder(
-            itemCount: 10,
+            itemCount: kProjectsTitles.length,
             itemBuilder: (BuildContext context, int itemIndex, int i) =>
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
@@ -36,7 +37,7 @@ class ProjectsMobileTab extends StatelessWidget {
                 projectTitle: kProjectsTitles[i],
                 projectDescription: kProjectsDescriptions[i],
                 projectLink: kProjectsLinks[i],
-                // backImage: kProjectsBanner[i],
+                backImage: kProjectsBanner[i],
               ),
             ),
             options: CarouselOptions(
@@ -57,7 +58,7 @@ class ProjectsMobileTab extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5.0),
                 side: BorderSide(color: kPrimaryColor)),
             onPressed: () {
-              launchURL("https://github.com/m-hamzashakeel");
+              launchURL("https://github.com/reubendeekay");
             },
             child: Text(
               "See More",
