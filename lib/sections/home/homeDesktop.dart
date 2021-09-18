@@ -62,13 +62,32 @@ class HomeDesktop extends StatelessWidget {
                 SizedBox(
                   height: height * 0.04,
                 ),
-                Text(
-                  "Reuben",
-                  style: GoogleFonts.poppins(
-                      fontSize: width < 1200 ? height * 0.05 : height * 0.06,
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 4.0),
+                AnimatedTextKit(
+                  animatedTexts: [
+                    ColorizeAnimatedText(
+                      "Reuben",
+                      speed: Duration(seconds: 4),
+                      textStyle: GoogleFonts.poppins(
+                          fontSize:
+                              width < 1200 ? height * 0.04 : height * 0.07,
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: 4.0),
+                      colors: [
+                        Colors.white,
+                        Colors.white,
+                        kPrimaryColor,
+                      ],
+                    )
+                  ],
+                  isRepeatingAnimation: false,
                 ),
+                // Text(
+                //   "Reuben",
+                //   style: GoogleFonts.poppins(
+                //       fontSize: width < 1200 ? height * 0.05 : height * 0.06,
+                //       fontWeight: FontWeight.w600,
+                //       letterSpacing: 4.0),
+                // ),
                 Text(
                   "   Jefwa",
                   style: GoogleFonts.srisakdi(
@@ -98,7 +117,7 @@ class HomeDesktop extends StatelessWidget {
                             " Flutter Developer",
                             " Web Developer",
                             " UI/UX Enthusiast",
-                            "Graphics Designer"
+                            "Product & Graphics Designer"
                           ]),
                     ],
                   ),

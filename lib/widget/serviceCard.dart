@@ -102,23 +102,16 @@ class _ServiceCardState extends State<ServiceCard> {
                           )
                         ]
                       : []),
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: height * 0.01,
-                  ),
-                  Expanded(
-                    child: Text(
-                      widget.serviceDescription,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.montserrat(
-                          fontSize: height * 0.015,
-                          letterSpacing: 2.0,
-                          fontWeight: FontWeight.w100,
-                          height: width < 900 ? 2.3 : 1.5),
-                    ),
-                  )
-                ],
+              child: Center(
+                child: Text(
+                  widget.serviceDescription,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.poppins(
+                      fontSize: height * 0.02,
+                      letterSpacing: 2.0,
+                      fontWeight: FontWeight.w400,
+                      height: width < 900 ? 2.3 : 1.5),
+                ),
               ),
             )));
   }

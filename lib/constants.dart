@@ -6,21 +6,21 @@ Color kPrimaryColor = Color(0xFF3500D3);
 
 // Social Media
 const kSocialIcons = [
-  "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
-  "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
-  "https://img.icons8.com/android/480/ffffff/twitter.png",
-  "https://img.icons8.com/metro/308/ffffff/linkedin.png",
   "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-  "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
+  "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
+  "https://img.icons8.com/android/480/ffffff/twitter.png",
+  "https://img.icons8.com/material-rounded/384/ffffff/whatsapp.png",
+  "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
+  "https://img.icons8.com/metro/308/ffffff/linkedin.png",
 ];
 
 const kSocialLinks = [
-  "https://web.facebook.com/profile.php?id=100005542429293",
-  "https://instagram.com/deekay_edits",
-  "https://twitter.com/kid_indigoo",
-  "https://www.linkedin.com/in/reuben-balozi-18991420b",
   "https://github.com/reubendeekay",
-  "https://mhamzadev.medium.com"
+  "https://web.facebook.com/profile.php?id=100005542429293",
+  "https://twitter.com/kid_indigoo",
+  "https://github.com/reubendeekay",
+  "https://instagram.com/deekay_edits",
+  "https://www.linkedin.com/in/reuben-balozi-18991420b",
 ];
 
 // URL Launcher
@@ -58,18 +58,36 @@ final kServicesTitles = [
 ];
 
 final kServicesDescriptions = [
-  "For now, I can only develop Android Apps using Flutter, that's because I don't own a MacBook right now so can't test or debug apps for iOS. Hopefully this missing piece will be filled soon :)",
-  "Although I'm mainly a flutter developer but I do care about the UI/UX for my client. Hence, I also do UI designing for applications. So, feel free to ask me for getting you UI/UX for your apps",
-  "Having a startup idea? Or maybe just want a prototype for your clients? With Flutter I can get you basic version of your app in no time and you are good to go for your project in future.",
-  "I have been writing technical blogs on Medium for over a year now. So, I can get you technical blogs with awesome header images, interesting topics and SEO friendly.\nCheck out my Medium profile @mhamzadev",
-  "Working as open source contributor on GitHub with 200+ stars and numerous forks on various projects liked and shared by other developers.\nCheck out my GitHub Profile @m-hamzashakeel",
+  '''Flutter
+  Android
+  iOS
+  Cross platform ''',
+  ''' React Js
+  Javascript
+  HTML
+  CSS
+  Flutter Web
+  Node Js''',
+  '''Figma
+  Mobile App UI
+  Web UI Design''',
+  ''' Pixel Lab
+  Logos
+  Product videos
+  Intros
+  Product design
+  Posters ''',
+  '''Figma
+  Design Prototypes
+  Flutter
+  App UI MVP''',
 ];
 
 final kServicesLinks = [
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://www.fiverr.com/hamza6shakeel/get-you-modern-ui-design-using-adobe-xd",
-  "https://www.fiverr.com/hamza6shakeel/be-your-mobile-app-developer-via-flutter",
-  "https://mhamzadev.medium.com",
+  "https://www.upwork.com/freelancers/~01ea7aa3df6626ffd5?s=996364627857502209",
+  "https://www.upwork.com/freelancers/~01ea7aa3df6626ffd5?s=996364627857502209",
+  "https://github.com/reubendeekay",
+  "https://instagram.com/deekay_edits",
   "https://github.com/m-hamzashakeel"
 ];
 
@@ -95,20 +113,19 @@ final kProjectsBanner = [
 ];
 
 final kProjectsIcons = [
-  "assets/projects/medkit.png",
+  "assets/projects/kilifi.png",
   "assets/projects/quran.png",
   "assets/projects/messenger.png",
   "assets/projects/hereiam.png",
-  "assets/projects/covid.png",
+  "assets/projects/wallify.png",
   "assets/projects/messenger.png",
-  "assets/projects/flutter.png",
   "assets/projects/earbender.png",
   "assets/projects/java.png",
   "assets/projects/android.png",
+  "assets/projects/kilifi.png",
+  "assets/projects/covid.png",
   "assets/projects/android.png",
-  "assets/projects/android.png",
-  "assets/projects/android.png",
-  "assets/projects/android.png",
+  "assets/projects/flutter.png",
   "assets/projects/android.png",
   "assets/services/open.png",
 ];
@@ -121,7 +138,6 @@ final kProjectsTitles = [
   "Wallify",
   "Snap Chef",
   "Deekay News",
-  "Shop it",
   "Funiture App UI",
   "20+ Error Screens",
   "Kilifi County Admin",
@@ -147,10 +163,9 @@ final kProjectsDescriptions = [
   "A single restaurant food discovery, order and delivery app. It hs a beutiful, elegant and fresh UI that lets users enjoy the whole experience.Users can track their order in realtime on the map. There is also a dedicated customer care platform for the admins to handle customer queries",
   //Deekay News
   "A news app that lets you access global news without any subscription. There is a wide range of news category to pick from and from selected countries. This makes use of the NewsOrg API. Take note that not all countries are made available by the API.",
-  //Shop it
-  "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
+
   //Furniture App UI
-  " An App UI concept for a furniture ecommerce business.  ",
+  " An App UI concept for a furniture ecommerce business. It has an intuitive and engaging UI that wows users. The UI is also fresh and original with smooth and subtle animations to make any user feel the app was custom tailored for them. Use this to save time on your project. Remember to star the repository, fork it and give credit. ",
   //20 + Error Screens
   "More than 20 error screens in flutter including 404 Error.They are stylish, modern and responsive. Use these to speed up your development. The source code is free to use. Fork the project, give it a star and some credit.",
   //Kilifi County Admin
@@ -168,22 +183,21 @@ final kProjectsDescriptions = [
 ];
 
 final kProjectsLinks = [
-  "https://github.com/m-hamzashakeel/MedKit-Pharmacy-App-Using-Flutter",
-  "https://github.com/m-hamzashakeel/The_Holy_Quran_App",
-  "https://github.com/m-hamzashakeel/Here-I-Am-Alert-App",
-  "https://github.com/m-hamzashakeel/Here-I-Am-Alert-App",
-  "https://github.com/m-hamzashakeel/Covid19-Tracker-App",
-  "https://github.com/m-hamzashakeel/Messenger-Chat-Head-Flutter-UI",
-  "https://github.com/m-hamzashakeel/flutter.dev-Flutter-Web-Clone",
-  "https://github.com/m-hamzashakeel/Earbender_Music_App",
-  "https://github.com/m-hamzashakeel/FTP_GUI_Java",
-  "https://github.com/m-hamzashakeel/My-Order-Resturant-Ordering-System",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
-  "https://github.com/m-hamzashakeel/Hidev_Web",
+  "https://github.com/reubendeekay/kilifi_county",
+  "https://github.com/reubendeekay/travel_app",
+  "https://github.com/reubendeekay/Chat-Messaging-App-Light-and-Dark-Theme",
+  "https://github.com/reubendeekay/E-commerce-Complete-Flutter-UI",
+  "https://github.com/reubendeekay/wallify_app",
+  "https://github.com/reubendeekay/snap_chef",
+  "https://github.com/reubendeekay/reubendeekay",
+  "https://github.com/reubendeekay/FlutterFoodybite",
+  "https://github.com/reubendeekay/20-errorscreens-flutter",
+  "https://github.com/reubendeekay/kilifi_county_admin",
+  "https://github.com/reubendeekay/elongo_publishers",
+  "https://github.com/reubendeekay/hope_foundation",
+  "https://github.com/reubendeekay/snap_chef_admin",
+  "https://github.com/reubendeekay/Reuben-s-website",
+  "https://github.com/reubendeekay/Best-Flutter-UI-Templates",
 ];
 
 // Contact

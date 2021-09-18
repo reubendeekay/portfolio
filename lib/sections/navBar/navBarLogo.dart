@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants.dart';
@@ -13,17 +14,35 @@ class NavBarLogo extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            "R",
-            style: GoogleFonts.spartan(
-                fontSize: 40,
-                color: kPrimaryColor,
-                fontWeight: FontWeight.w900),
-          ),
-          Text(
-            ".",
-            style: GoogleFonts.notoSans(
-                fontSize: 60, color: Colors.white, fontWeight: FontWeight.w900),
+          AnimatedTextKit(animatedTexts: [
+            ColorizeAnimatedText(
+              "R",
+              colors: [
+                kPrimaryColor,
+                kPrimaryColor,
+                Colors.white,
+              ],
+              speed: Duration(seconds: 7),
+              textStyle: GoogleFonts.spartan(
+                  fontSize: 40, fontWeight: FontWeight.w900),
+            )
+          ]),
+          AnimatedTextKit(
+            animatedTexts: [
+              ColorizeAnimatedText(
+                ".",
+                speed: Duration(seconds: 10),
+                colors: [
+                  Colors.white,
+                  Colors.white,
+                  kPrimaryColor,
+                ],
+                textStyle: GoogleFonts.notoSans(
+                    fontSize: 60,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w900),
+              ),
+            ],
           ),
         ],
       ),
